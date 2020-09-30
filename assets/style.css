@@ -3,12 +3,14 @@ nav {
   background-color: blue;
   position: relative;
 }
+
 .nav-links {
   position: absolute;
   top: 50%;
   right: 20px;
   transform: translate(0%, -50%);
 }
+
 .nav-links li {
   display: inline;
 }
@@ -22,9 +24,45 @@ nav {
   text-decoration: none;
   font-size: 25px;
 }
+
 main {
   height: 80vh;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 80vh;
+}
+
+.left {
+  background-color: yellow;
+  float: left;
+}
+
+.right {
+  background-color: cyan;
+  float: right;
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  /*border-radius: 15px;*/
+}
+
 footer {
   height: 10vh;
   background-color: blue;
